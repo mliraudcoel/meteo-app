@@ -25,7 +25,6 @@ class SearchBar extends React.Component {
     })
   };
 
-  
   getLocalisationMeteo = () => {
     let urlString = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.localisation}&units=metric&appid=9591fedf7a26aca76eb1f38cdbd96577`;
     axios(urlString)
@@ -45,7 +44,6 @@ class SearchBar extends React.Component {
   };
 
   render() {
-    console.log(this.state.localisation)
     return(
       <Fragment>
       <p>Recherchez la météo par localisation :</p>
@@ -58,7 +56,7 @@ class SearchBar extends React.Component {
       value= {this.state.localisation}
       onChange= {this.searchLocalisation}
     />
-      <button type="button" onClick={this.getLocalisationMeteo}>Search</button>
+      <button type="button" className="searchButton" onClick={this.getLocalisationMeteo}>Search</button>
       <h2>{this.state.name}</h2>
       <img src={`https://openweathermap.org/img/wn/${this.state.icon}.png`} alt={this.state.iconDescrib} width="100px" />
       <p>{this.state.temp}°C</p>
@@ -70,7 +68,5 @@ class SearchBar extends React.Component {
   }
 
 }
-
-
 
 export default SearchBar;

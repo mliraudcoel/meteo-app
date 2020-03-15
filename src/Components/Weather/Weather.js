@@ -42,6 +42,7 @@ componentDidMount = () => {
 render() {
   return(
     <div>
+      <h3>Votre localisation actuelle :</h3>
       <div className='card1'>
         <h2>{this.state.name}</h2>
         <img src={`https://openweathermap.org/img/wn/${this.state.icon}.png`} alt={this.state.iconDescrib} width="100px" />

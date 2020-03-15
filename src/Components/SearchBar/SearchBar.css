@@ -1,8 +1,11 @@
-.searchBar{
+.searchBar {
     width: 500px;
     height: 20px;
 }
 
+.searchButton {
+    height: 27px;
+}
 .searchCard {
     margin-right:30%;
 }

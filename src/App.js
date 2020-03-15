@@ -5,11 +5,10 @@ import SearchBar from './Components/SearchBar/SearchBar';
 import './App.css';
 
 
-
-
 function App() {
 return (
 <div className="App">
+<img src={`${process.env.PUBLIC_URL}/assets/images/cloud.jpg`} width="100%" height="200px"/>
   <h1>L'appli meteo</h1>
   <div className="meteo">
     <div className="weatherLocation">
